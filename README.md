@@ -19,6 +19,15 @@ megaput \
 "file/to/upload"
 ```
 
+### Example: megals ###
+```bash
+$ docker run -it --rm -v "$(pwd)":/workdir -w /workdir klutchell/megatools \
+megals -hnl --header \
+--username "testuser@email.com" \
+--password "topsecret" \
+"/Root/backups"
+```
+
 ## Parameters ##
 
 See the [megatools man page](https://megatools.megous.com/man/megatools.html) for available commands and parameters.
@@ -27,7 +36,7 @@ Note that only files within current directory and subdirectories will be availab
 
 ## Author ##
 
-* Kyle Harding <kylemharding@gmail.com>
+Kyle Harding <kylemharding@gmail.com>
 
 ## Credit ##
 
