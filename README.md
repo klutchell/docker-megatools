@@ -21,7 +21,7 @@ megaput \
 
 ### Example: megals ###
 ```bash
-$ docker run -it --rm -v "$(pwd)":/workdir -w /workdir klutchell/megatools \
+$ docker run -it --rm klutchell/megatools \
 megals -hnl --header \
 --username "testuser@email.com" \
 --password "topsecret" \
