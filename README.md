@@ -16,7 +16,16 @@ megaput \
 --username "testuser@email.com" \
 --password "topsecret" \
 --path "/Root/backups" \
-"file/to/upload"
+"local/file/to/upload"
+```
+
+### Example: megaget ###
+```bash
+$ docker run -it --rm -v "$(pwd)":/workdir -w /workdir klutchell/megatools \
+megaget \
+--username "testuser@email.com" \
+--password "topsecret" \
+"/Root/remote/file/to/download"
 ```
 
 ### Example: megals ###
@@ -25,7 +34,7 @@ $ docker run -it --rm klutchell/megatools \
 megals -hnl --header \
 --username "testuser@email.com" \
 --password "topsecret" \
-"/Root/backups"
+"/Root/remote/files/to/list"
 ```
 
 ## Parameters ##
